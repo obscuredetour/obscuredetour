@@ -72,6 +72,12 @@ h1 {
           align-items : center;
 }
 
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1440px;
+}
+
 /* Navigation */
 
 .main-nav {
@@ -110,8 +116,8 @@ h1 {
 }
 
 #banner {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/css/img/banner.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/banner.jpg");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/css/img/banner-optimized.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/banner-optimized.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -380,6 +386,13 @@ h1 {
     }
 
 @media only screen and (max-width: 575px) {
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     #portfolio .thumbnail {
         padding-top: 1em;
     }
